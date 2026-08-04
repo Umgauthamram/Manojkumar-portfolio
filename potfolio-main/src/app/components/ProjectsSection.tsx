@@ -8,7 +8,7 @@ type Project = {
   id: string;
   title: string;
   subtitle: string;
-  problem: string;
+  problem?: string;
   description: string;
   tech: string[];
   color: string;
@@ -183,10 +183,6 @@ export default function ProjectsSection() {
               <br />
               <span className="gradient-text italic">Projects.</span>
             </h2>
-          </div>
-          <div className="hidden md:flex items-center gap-2 text-xs text-muted-foreground">
-            <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-            Click any project to explore
           </div>
         </div>
 
