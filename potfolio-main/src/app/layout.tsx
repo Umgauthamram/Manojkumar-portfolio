@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     google: '1VZgz9ZZXI3xl_O-GD6Rww9IPjzdETFFXx0SLx--xpA',
   },
   icons: {
-    icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
+    icon: [{ url: '/favicon.png', type: 'image/png' }],
   },
   openGraph: {
     type: 'profile',
