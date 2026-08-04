@@ -74,11 +74,11 @@ export default function ContactSection() {
 
   const inputStyle: React.CSSProperties = {
     width: '100%',
-    background: 'rgba(26,26,46,0.5)',
-    border: '1px solid rgba(79,142,247,0.15)',
+    background: 'var(--input)',
+    border: '1px solid var(--border)',
     borderRadius: '0.75rem',
     padding: '0.875rem 1.125rem',
-    color: '#E8EAF0',
+    color: 'var(--foreground)',
     fontSize: '0.875rem',
     outline: 'none',
     transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
@@ -247,12 +247,12 @@ export default function ContactSection() {
                       onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
                       style={inputStyle}
                       onFocus={(e) => {
-                        (e.target as HTMLInputElement).style.borderColor = 'rgba(79,142,247,0.5)';
+                        (e.target as HTMLInputElement).style.borderColor = 'var(--primary)';
                         (e.target as HTMLInputElement).style.boxShadow =
                           '0 0 15px rgba(79,142,247,0.1)';
                       }}
                       onBlur={(e) => {
-                        (e.target as HTMLInputElement).style.borderColor = 'rgba(79,142,247,0.15)';
+                        (e.target as HTMLInputElement).style.borderColor = 'var(--border)';
                         (e.target as HTMLInputElement).style.boxShadow = 'none';
                       }}
                     />
@@ -267,12 +267,12 @@ export default function ContactSection() {
                       onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
                       style={inputStyle}
                       onFocus={(e) => {
-                        (e.target as HTMLInputElement).style.borderColor = 'rgba(79,142,247,0.5)';
+                        (e.target as HTMLInputElement).style.borderColor = 'var(--primary)';
                         (e.target as HTMLInputElement).style.boxShadow =
                           '0 0 15px rgba(79,142,247,0.1)';
                       }}
                       onBlur={(e) => {
-                        (e.target as HTMLInputElement).style.borderColor = 'rgba(79,142,247,0.15)';
+                        (e.target as HTMLInputElement).style.borderColor = 'var(--border)';
                         (e.target as HTMLInputElement).style.boxShadow = 'none';
                       }}
                     />
@@ -289,12 +289,12 @@ export default function ContactSection() {
                     onChange={(e) => setForm((f) => ({ ...f, subject: e.target.value }))}
                     style={inputStyle}
                     onFocus={(e) => {
-                      (e.target as HTMLInputElement).style.borderColor = 'rgba(79,142,247,0.5)';
+                      (e.target as HTMLInputElement).style.borderColor = 'var(--primary)';
                       (e.target as HTMLInputElement).style.boxShadow =
                         '0 0 15px rgba(79,142,247,0.1)';
                     }}
                     onBlur={(e) => {
-                      (e.target as HTMLInputElement).style.borderColor = 'rgba(79,142,247,0.15)';
+                      (e.target as HTMLInputElement).style.borderColor = 'var(--border)';
                       (e.target as HTMLInputElement).style.boxShadow = 'none';
                     }}
                   />
@@ -310,12 +310,12 @@ export default function ContactSection() {
                     onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
                     style={{ ...inputStyle, resize: 'vertical', minHeight: '120px' }}
                     onFocus={(e) => {
-                      (e.target as HTMLTextAreaElement).style.borderColor = 'rgba(79,142,247,0.5)';
+                      (e.target as HTMLTextAreaElement).style.borderColor = 'var(--primary)';
                       (e.target as HTMLTextAreaElement).style.boxShadow =
                         '0 0 15px rgba(79,142,247,0.1)';
                     }}
                     onBlur={(e) => {
-                      (e.target as HTMLTextAreaElement).style.borderColor = 'rgba(79,142,247,0.15)';
+                      (e.target as HTMLTextAreaElement).style.borderColor = 'var(--border)';
                       (e.target as HTMLTextAreaElement).style.boxShadow = 'none';
                     }}
                   />

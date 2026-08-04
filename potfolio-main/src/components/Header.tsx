@@ -97,15 +97,15 @@ export default function Header() {
                 onClick={() => handleNav(item.href)}
                 className="px-5 py-2 rounded-full text-[11px] font-bold uppercase tracking-widest transition-all duration-200"
                 style={{
-                  color: activeSection === item.href ? '#4F8EF7' : 'rgba(232,234,240,0.6)',
+                  color: activeSection === item.href ? 'var(--primary)' : 'var(--muted-foreground)',
                   background: activeSection === item.href ? 'rgba(79,142,247,0.1)' : 'transparent',
                 }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLButtonElement).style.color = '#4F8EF7';
+                  (e.currentTarget as HTMLButtonElement).style.color = 'var(--primary)';
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLButtonElement).style.color =
-                    activeSection === item.href ? '#4F8EF7' : 'rgba(232,234,240,0.6)';
+                    activeSection === item.href ? 'var(--primary)' : 'var(--muted-foreground)';
                 }}
               >
                 {item.label}
@@ -115,10 +115,6 @@ export default function Header() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              Active
-            </div>
             <ThemeToggle />
             <button
               onClick={() => handleNav('#contact')}
