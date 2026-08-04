@@ -8,7 +8,6 @@ import ProjectsSection from '@/app/components/ProjectsSection';
 import ExperienceSection from '@/app/components/ExperienceSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
 import ContactSection from '@/app/components/ContactSection';
-import NovaStarOrb from '@/app/components/NovaStarOrb';
 import CustomCursor from '@/app/components/CustomCursor';
 import LoadingScreen from '@/app/components/LoadingScreen';
 import ScrollToTop from '@/app/components/ScrollToTop';
@@ -19,7 +18,6 @@ export default function HomePage() {
     <main className="relative min-h-screen bg-background text-foreground cursor-none">
       <LoadingScreen />
       <CustomCursor />
-      <NovaStarOrb />
       <CommandPalette />
       <Header />
       <HeroSection />

@@ -30,11 +30,6 @@ export default function AboutSection() {
       desc: 'Building scalable digital products with modern web technologies.',
     },
     {
-      icon: '🤖',
-      label: 'AI Innovator',
-      desc: 'Applying AI to simplify workflows and create smarter user experiences.',
-    },
-    {
       icon: '🧠',
       label: 'Creative Designer',
       desc: 'Designing intuitive interfaces, impactful visuals, and engaging digital experiences.',
@@ -108,7 +103,6 @@ export default function AboutSection() {
                 'Full Stack',
                 'Next.js',
                 'UI/UX Design',
-                'AI Solutions',
                 'Public Sector',
                 'System Design',
               ]?.map((tag) => (

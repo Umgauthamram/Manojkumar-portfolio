@@ -29,17 +29,6 @@ const CATEGORIES: Category[] = [
     ],
   },
   {
-    label: 'AI & Automation',
-    icon: '🎨',
-    skills: [
-      { name: 'ChatGPT', level: 98, color: '#7C3AED' },
-      { name: 'Prompt Engineering', level: 96, color: '#4F8EF7' },
-      { name: 'Gemini', level: 90, color: '#007FFF' },
-      { name: 'Claude', level: 88, color: '#319795' },
-      { name: 'GitHub Copilot', level: 80, color: '#FF4785' },
-    ],
-  },
-  {
     label: 'Data & Analytics',
     icon: '☁️',
     skills: [

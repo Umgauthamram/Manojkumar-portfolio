@@ -5,10 +5,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import AnimatedNumber from '@/app/components/AnimatedNumber';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 
-const SPECIALTIES = ['React.js', 'Next.js', 'TypeScript', 'UI Engineering', 'AI Products'];
+const SPECIALTIES = ['React.js', 'Next.js', 'TypeScript', 'UI Engineering', 'Digital Innovation'];
 
 const TERMINAL_LINES = [
-  { text: '> Initializing Nova Star AI...', delay: 0, color: '#4F8EF7' },
+  { text: '> Initializing portfolio systems...', delay: 0, color: '#4F8EF7' },
   { text: '> Loading portfolio assets...', delay: 600, color: '#A8ABBE' },
   { text: '> Systems online. Welcome.', delay: 1200, color: '#06B6D4' },
   { text: '> ashkan@epic2077 ~ $', delay: 1800, color: '#4F8EF7', cursor: true },

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: '%s | Ashkan Sadeghi',
   },
   description:
-    'Manoj Kumar — Policy Strategist, Full Stack Developer & UI/UX Designer specializing in Next.js, React, and Digital Innovation. Personal portfolio showcasing government policy, web development, AI solutions, and creative design projects.',
+    'Manoj Kumar — Policy Strategist, Full Stack Developer & UI/UX Designer specializing in Next.js, React, and Digital Innovation. Personal portfolio showcasing government policy, web development, digital innovation, and creative design projects.',
   applicationName: 'Epic2077',
   authors: [{ name: 'Ashkan Sadeghi', url: SITE_URL }],
   creator: 'Manojkumar',
@@ -48,7 +48,6 @@ export const metadata: Metadata = {
     'Next.js',
     'React',
     'TypeScrip',
-    'AI',
     'Manoj',
   ],
   alternates: {
@@ -122,7 +121,6 @@ const personJsonLd = {
     'JavaScript',
     'Front-End Development',
     'UI Engineering',
-    'AI Integration',
   ],
   sameAs: [
     'https://github.com/Epic2077',
