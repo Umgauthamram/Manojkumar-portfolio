@@ -298,7 +298,7 @@ function ProjectCard({
         <div
           className="absolute inset-0"
           style={{
-            background: `linear-gradient(180deg, transparent 20%, rgba(5,5,8,0.95) 100%), linear-gradient(135deg, ${project.color}15 0%, transparent 60%)`,
+            background: `linear-gradient(180deg, transparent 20%, var(--card) 100%), linear-gradient(135deg, ${project.color}15 0%, transparent 60%)`,
           }}
         />
 
@@ -317,7 +317,7 @@ function ProjectCard({
       </div>
 
       {/* Content */}
-      <div className="p-6 flex-shrink-0" style={{ background: 'rgba(13,13,24,0.95)' }}>
+      <div className="p-6 flex-shrink-0" style={{ background: 'var(--card)' }}>
         <div className="flex items-start justify-between mb-3">
           <div>
             <h3 className="font-bold text-foreground text-lg leading-tight">{project.title}</h3>
@@ -376,7 +376,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
       <div
         className="relative w-full max-w-3xl rounded-2xl overflow-hidden"
         style={{
-          background: '#0D0D18',
+          background: 'var(--card)',
           border: `1px solid ${project.color}30`,
           boxShadow: `0 0 80px ${project.color}20`,
           maxHeight: '90vh',
@@ -387,7 +387,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         <button
           onClick={onClose}
           className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
-          style={{ background: 'rgba(5,5,8,0.8)', border: '1px solid rgba(79,142,247,0.2)' }}
+          style={{ background: 'var(--background)', border: '1px solid rgba(79,142,247,0.2)' }}
           aria-label="Close modal"
         >
           <Icon name="XMarkIcon" size={16} className="text-foreground" />
@@ -406,7 +406,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
           <div
             className="absolute inset-0"
             style={{
-              background: `linear-gradient(180deg, transparent 30%, rgba(13,13,24,1) 100%)`,
+              background: `linear-gradient(180deg, transparent 30%, var(--card) 100%)`,
             }}
           />
 

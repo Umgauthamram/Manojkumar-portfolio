@@ -141,7 +141,7 @@ export default function SkillsSection() {
                 <div>
                   <div
                     className="font-bold text-sm"
-                    style={{ color: activeCat === i ? '#4F8EF7' : '#E8EAF0' }}
+                    style={{ color: activeCat === i ? 'var(--primary)' : 'var(--foreground)' }}
                   >
                     {cat.label}
                   </div>
